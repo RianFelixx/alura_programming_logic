@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br>")
+        }
+
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+
+        function calculaImc(peso, altura){
+            //let imc = Math.round(peso / (altura * altura));
+            return Math.round(peso / (altura * altura));
+        }
+
+        //let imcRian = calculaImc(55, 1.73);
+        //let imcMillene = calculaImc(70, 1.67);
+        let totalImc = calculaImc(55, 1.73) + calculaImc(70, 1.67);
+
+        
+        mostra(totalImc);
+        
+    </script>
+</body>
+</html>

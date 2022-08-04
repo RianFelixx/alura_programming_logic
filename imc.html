@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        function calculaImc(peso, altura) {
+            let imc = Math.round(peso / (altura * altura));    
+            mostra("O imc calculado é " + imc);
+        }
+
+        let pesoRian = 55;
+        let alturaRian = 1.73;
+        //let calculoImcRian = Math.round(pesoRian / (alturaRian * alturaRian));
+        calculaImc(pesoRian, alturaRian);
+
+        let pesoMillene = 70;
+        let alturaMillene = 1.67;
+        //let calculoImcMillene = Math.round(pesoMillene / (alturaMillene * alturaMillene));
+        calculaImc(pesoMillene, alturaMillene);
+
+        //mostra("O imc de Rian é: " + calculoImcRian);
+        //mostra("O imc de Millene é: " + calculoImcMillene);
+        mostra()
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
